@@ -12,8 +12,5 @@ struct ContactDetail: Identifiable, Codable {
     let id = UUID()
     let firstName: String
     let lastName: String
-//    var imageUrl: URL {
-//        let address = "https://http.cat/\(code).jpg"
-//        return URL(string: address)!
-//    }
+
 }

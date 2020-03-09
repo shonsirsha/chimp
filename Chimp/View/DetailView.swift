@@ -21,8 +21,8 @@ struct DetailView: View {
     
 }
 
-//struct DetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DetailView(httpStatus: HttpStatus(code: "404", title: "Not Found"))
-//    }
-//}
+struct DetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailView(contact: ContactDetail(firstName: "Sean", lastName: "Saoirse"))
+    }
+}

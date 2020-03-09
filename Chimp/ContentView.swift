@@ -9,26 +9,38 @@
 import SwiftUI
 struct ContentView: View {
     @State private var contactNameSection: [ContactSection] = []
-
+    
     
     var body: some View {
-        NavigationView {
-             List {
-                 ForEach(contactNameSection) { section in
-                      Section(header: SectionHeaderView(section: section)) {
-                          ForEach(section.people) { person in
-                             NavigationLink(destination: DetailView(contact: person)) {
-                                TableRowView(contact: person)
-                              }
-                          }
-                      }
-                  }
-             }
-             .frame(minWidth: 250, maxWidth: 350)
-         }.listStyle(SidebarListStyle())
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .onAppear{
-                self.loadJSON()
+        HStack {
+            List{
+                VStack{
+                               Text("YOLO")
+                                   .font(.headline)
+                           }
+                           
+            }.listStyle(SidebarListStyle())
+            .frame(minWidth: 150, maxWidth: 200)
+           
+            
+            NavigationView {
+                List {
+                    ForEach(contactNameSection) { section in
+                        Section(header: SectionHeaderView(section: section)) {
+                            ForEach(section.people) { person in
+                                NavigationLink(destination: DetailView(contact: person)) {
+                                    TableRowView(contact: person)
+                                }
+                            }
+                        }
+                    }
+                }
+                .frame(minWidth: 250, maxWidth: 350)
+            }
+                .frame(minWidth: 300, idealWidth: .infinity, maxWidth: .infinity, minHeight: 300)
+                .onAppear{
+                    self.loadJSON()
+            }
         }
     }
     
