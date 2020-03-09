@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B507FA0D24166AE900723CFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507FA0C24166AE900723CFA /* AppDelegate.swift */; };
+		B507FA0F24166AE900723CFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507FA0E24166AE900723CFA /* ContentView.swift */; };
+		B507FA1224166AE900723CFA /* Chimp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B507FA1024166AE900723CFA /* Chimp.xcdatamodeld */; };
+		B507FA1424166AEC00723CFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B507FA1324166AEC00723CFA /* Assets.xcassets */; };
+		B507FA1724166AEC00723CFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B507FA1624166AEC00723CFA /* Preview Assets.xcassets */; };
+		B507FA1A24166AEC00723CFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B507FA1824166AEC00723CFA /* Main.storyboard */; };
+		B507FA2624166AEC00723CFA /* ChimpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507FA2524166AEC00723CFA /* ChimpTests.swift */; };
+		B507FA3124166AEC00723CFA /* ChimpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507FA3024166AEC00723CFA /* ChimpUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B507FA2224166AEC00723CFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B507FA0124166AE900723CFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B507FA0824166AE900723CFA;
+			remoteInfo = Chimp;
+		};
+		B507FA2D24166AEC00723CFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B507FA0124166AE900723CFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B507FA0824166AE900723CFA;
+			remoteInfo = Chimp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B507FA0924166AE900723CFA /* Chimp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chimp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B507FA0C24166AE900723CFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B507FA0E24166AE900723CFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B507FA1124166AE900723CFA /* Chimp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chimp.xcdatamodel; sourceTree = "<group>"; };
+		B507FA1324166AEC00723CFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B507FA1624166AEC00723CFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B507FA1924166AEC00723CFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B507FA1B24166AEC00723CFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B507FA1C24166AEC00723CFA /* Chimp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chimp.entitlements; sourceTree = "<group>"; };
+		B507FA2124166AEC00723CFA /* ChimpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChimpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B507FA2524166AEC00723CFA /* ChimpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChimpTests.swift; sourceTree = "<group>"; };
+		B507FA2724166AEC00723CFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B507FA2C24166AEC00723CFA /* ChimpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChimpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B507FA3024166AEC00723CFA /* ChimpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChimpUITests.swift; sourceTree = "<group>"; };
+		B507FA3224166AEC00723CFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B507FA0624166AE900723CFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B507FA1E24166AEC00723CFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B507FA2924166AEC00723CFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B507FA0024166AE900723CFA = {
+			isa = PBXGroup;
+			children = (
+				B507FA0B24166AE900723CFA /* Chimp */,
+				B507FA2424166AEC00723CFA /* ChimpTests */,
+				B507FA2F24166AEC00723CFA /* ChimpUITests */,
+				B507FA0A24166AE900723CFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B507FA0A24166AE900723CFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B507FA0924166AE900723CFA /* Chimp.app */,
+				B507FA2124166AEC00723CFA /* ChimpTests.xctest */,
+				B507FA2C24166AEC00723CFA /* ChimpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B507FA0B24166AE900723CFA /* Chimp */ = {
+			isa = PBXGroup;
+			children = (
+				B507FA0C24166AE900723CFA /* AppDelegate.swift */,
+				B507FA0E24166AE900723CFA /* ContentView.swift */,
+				B507FA1324166AEC00723CFA /* Assets.xcassets */,
+				B507FA1824166AEC00723CFA /* Main.storyboard */,
+				B507FA1B24166AEC00723CFA /* Info.plist */,
+				B507FA1C24166AEC00723CFA /* Chimp.entitlements */,
+				B507FA1024166AE900723CFA /* Chimp.xcdatamodeld */,
+				B507FA1524166AEC00723CFA /* Preview Content */,
+			);
+			path = Chimp;
+			sourceTree = "<group>";
+		};
+		B507FA1524166AEC00723CFA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B507FA1624166AEC00723CFA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B507FA2424166AEC00723CFA /* ChimpTests */ = {
+			isa = PBXGroup;
+			children = (
+				B507FA2524166AEC00723CFA /* ChimpTests.swift */,
+				B507FA2724166AEC00723CFA /* Info.plist */,
+			);
+			path = ChimpTests;
+			sourceTree = "<group>";
+		};
+		B507FA2F24166AEC00723CFA /* ChimpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B507FA3024166AEC00723CFA /* ChimpUITests.swift */,
+				B507FA3224166AEC00723CFA /* Info.plist */,
+			);
+			path = ChimpUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B507FA0824166AE900723CFA /* Chimp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B507FA3524166AEC00723CFA /* Build configuration list for PBXNativeTarget "Chimp" */;
+			buildPhases = (
+				B507FA0524166AE900723CFA /* Sources */,
+				B507FA0624166AE900723CFA /* Frameworks */,
+				B507FA0724166AE900723CFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chimp;
+			productName = Chimp;
+			productReference = B507FA0924166AE900723CFA /* Chimp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B507FA2024166AEC00723CFA /* ChimpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B507FA3824166AEC00723CFA /* Build configuration list for PBXNativeTarget "ChimpTests" */;
+			buildPhases = (
+				B507FA1D24166AEC00723CFA /* Sources */,
+				B507FA1E24166AEC00723CFA /* Frameworks */,
+				B507FA1F24166AEC00723CFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B507FA2324166AEC00723CFA /* PBXTargetDependency */,
+			);
+			name = ChimpTests;
+			productName = ChimpTests;
+			productReference = B507FA2124166AEC00723CFA /* ChimpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B507FA2B24166AEC00723CFA /* ChimpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B507FA3B24166AEC00723CFA /* Build configuration list for PBXNativeTarget "ChimpUITests" */;
+			buildPhases = (
+				B507FA2824166AEC00723CFA /* Sources */,
+				B507FA2924166AEC00723CFA /* Frameworks */,
+				B507FA2A24166AEC00723CFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B507FA2E24166AEC00723CFA /* PBXTargetDependency */,
+			);
+			name = ChimpUITests;
+			productName = ChimpUITests;
+			productReference = B507FA2C24166AEC00723CFA /* ChimpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B507FA0124166AE900723CFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Sean Saoirse";
+				TargetAttributes = {
+					B507FA0824166AE900723CFA = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					B507FA2024166AEC00723CFA = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = B507FA0824166AE900723CFA;
+					};
+					B507FA2B24166AEC00723CFA = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = B507FA0824166AE900723CFA;
+					};
+				};
+			};
+			buildConfigurationList = B507FA0424166AE900723CFA /* Build configuration list for PBXProject "Chimp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B507FA0024166AE900723CFA;
+			productRefGroup = B507FA0A24166AE900723CFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B507FA0824166AE900723CFA /* Chimp */,
+				B507FA2024166AEC00723CFA /* ChimpTests */,
+				B507FA2B24166AEC00723CFA /* ChimpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B507FA0724166AE900723CFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B507FA1A24166AEC00723CFA /* Main.storyboard in Resources */,
+				B507FA1724166AEC00723CFA /* Preview Assets.xcassets in Resources */,
+				B507FA1424166AEC00723CFA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B507FA1F24166AEC00723CFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B507FA2A24166AEC00723CFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B507FA0524166AE900723CFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B507FA0F24166AE900723CFA /* ContentView.swift in Sources */,
+				B507FA0D24166AE900723CFA /* AppDelegate.swift in Sources */,
+				B507FA1224166AE900723CFA /* Chimp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B507FA1D24166AEC00723CFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B507FA2624166AEC00723CFA /* ChimpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B507FA2824166AEC00723CFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B507FA3124166AEC00723CFA /* ChimpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B507FA2324166AEC00723CFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B507FA0824166AE900723CFA /* Chimp */;
+			targetProxy = B507FA2224166AEC00723CFA /* PBXContainerItemProxy */;
+		};
+		B507FA2E24166AEC00723CFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B507FA0824166AE900723CFA /* Chimp */;
+			targetProxy = B507FA2D24166AEC00723CFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B507FA1824166AEC00723CFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B507FA1924166AEC00723CFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B507FA3324166AEC00723CFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B507FA3424166AEC00723CFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B507FA3624166AEC00723CFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Chimp/Chimp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Chimp/Preview Content\"";
+				DEVELOPMENT_TEAM = Q33X652UWU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Chimp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seansaoirse.Chimp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B507FA3724166AEC00723CFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Chimp/Chimp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Chimp/Preview Content\"";
+				DEVELOPMENT_TEAM = Q33X652UWU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Chimp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seansaoirse.Chimp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B507FA3924166AEC00723CFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q33X652UWU;
+				INFOPLIST_FILE = ChimpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seansaoirse.ChimpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chimp.app/Contents/MacOS/Chimp";
+			};
+			name = Debug;
+		};
+		B507FA3A24166AEC00723CFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q33X652UWU;
+				INFOPLIST_FILE = ChimpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seansaoirse.ChimpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chimp.app/Contents/MacOS/Chimp";
+			};
+			name = Release;
+		};
+		B507FA3C24166AEC00723CFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q33X652UWU;
+				INFOPLIST_FILE = ChimpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seansaoirse.ChimpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Chimp;
+			};
+			name = Debug;
+		};
+		B507FA3D24166AEC00723CFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q33X652UWU;
+				INFOPLIST_FILE = ChimpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seansaoirse.ChimpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Chimp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B507FA0424166AE900723CFA /* Build configuration list for PBXProject "Chimp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B507FA3324166AEC00723CFA /* Debug */,
+				B507FA3424166AEC00723CFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B507FA3524166AEC00723CFA /* Build configuration list for PBXNativeTarget "Chimp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B507FA3624166AEC00723CFA /* Debug */,
+				B507FA3724166AEC00723CFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B507FA3824166AEC00723CFA /* Build configuration list for PBXNativeTarget "ChimpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B507FA3924166AEC00723CFA /* Debug */,
+				B507FA3A24166AEC00723CFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B507FA3B24166AEC00723CFA /* Build configuration list for PBXNativeTarget "ChimpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B507FA3C24166AEC00723CFA /* Debug */,
+				B507FA3D24166AEC00723CFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B507FA1024166AE900723CFA /* Chimp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B507FA1124166AE900723CFA /* Chimp.xcdatamodel */,
+			);
+			currentVersion = B507FA1124166AE900723CFA /* Chimp.xcdatamodel */;
+			path = Chimp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B507FA0124166AE900723CFA /* Project object */;
+}
