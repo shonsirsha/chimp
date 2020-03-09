@@ -1,0 +1,34 @@
+[
+  {
+    "firstLetter": "A",
+    "people": [
+      {
+        "firstName": "Anton",
+        "lastName": "Martin"
+      },
+     {
+        "firstName": "Adelina",
+        "lastName": "Rode"
+      },
+    ]
+  },
+  {
+     "firstLetter": "M",
+     "people": [
+       {
+         "firstName": "Max",
+         "lastName": "Gravemayer"
+       }
+     ]
+   },
+  {
+    "firstLetter": "N",
+    "people": [
+      {
+        "firstName": "Noah",
+        "lastName": "Gravemayer"
+      }
+    ]
+  }
+]
+

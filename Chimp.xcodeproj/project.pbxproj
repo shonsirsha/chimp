@@ -15,6 +15,13 @@
 		B507FA1A24166AEC00723CFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B507FA1824166AEC00723CFA /* Main.storyboard */; };
 		B507FA2624166AEC00723CFA /* ChimpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507FA2524166AEC00723CFA /* ChimpTests.swift */; };
 		B507FA3124166AEC00723CFA /* ChimpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507FA3024166AEC00723CFA /* ChimpUITests.swift */; };
+		B507FA3F2416728700723CFA /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507FA3E2416728700723CFA /* SectionHeaderView.swift */; };
+		B507FA42241672F500723CFA /* ContactSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507FA41241672F500723CFA /* ContactSection.swift */; };
+		B507FA48241675CB00723CFA /* ContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507FA47241675CB00723CFA /* ContactDetail.swift */; };
+		B507FA4B2416766400723CFA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507FA4A2416766400723CFA /* DetailView.swift */; };
+		B507FA4D2416771F00723CFA /* TableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507FA4C2416771F00723CFA /* TableRowView.swift */; };
+		B507FA4F2416790800723CFA /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = B507FA4E2416790800723CFA /* people.json */; };
+		B507FA512416795E00723CFA /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507FA502416795E00723CFA /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +57,13 @@
 		B507FA2C24166AEC00723CFA /* ChimpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChimpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B507FA3024166AEC00723CFA /* ChimpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChimpUITests.swift; sourceTree = "<group>"; };
 		B507FA3224166AEC00723CFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B507FA3E2416728700723CFA /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		B507FA41241672F500723CFA /* ContactSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSection.swift; sourceTree = "<group>"; };
+		B507FA47241675CB00723CFA /* ContactDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetail.swift; sourceTree = "<group>"; };
+		B507FA4A2416766400723CFA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		B507FA4C2416771F00723CFA /* TableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowView.swift; sourceTree = "<group>"; };
+		B507FA4E2416790800723CFA /* people.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
+		B507FA502416795E00723CFA /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,14 +114,19 @@
 		B507FA0B24166AE900723CFA /* Chimp */ = {
 			isa = PBXGroup;
 			children = (
+				B507FA522416796300723CFA /* Supporting Files */,
+				B507FA492416761E00723CFA /* View */,
+				B507FA40241672DD00723CFA /* Model */,
 				B507FA0C24166AE900723CFA /* AppDelegate.swift */,
 				B507FA0E24166AE900723CFA /* ContentView.swift */,
 				B507FA1324166AEC00723CFA /* Assets.xcassets */,
+				B507FA4E2416790800723CFA /* people.json */,
 				B507FA1824166AEC00723CFA /* Main.storyboard */,
 				B507FA1B24166AEC00723CFA /* Info.plist */,
 				B507FA1C24166AEC00723CFA /* Chimp.entitlements */,
 				B507FA1024166AE900723CFA /* Chimp.xcdatamodeld */,
 				B507FA1524166AEC00723CFA /* Preview Content */,
+				B507FA3E2416728700723CFA /* SectionHeaderView.swift */,
 			);
 			path = Chimp;
 			sourceTree = "<group>";
@@ -136,6 +155,32 @@
 				B507FA3224166AEC00723CFA /* Info.plist */,
 			);
 			path = ChimpUITests;
+			sourceTree = "<group>";
+		};
+		B507FA40241672DD00723CFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B507FA41241672F500723CFA /* ContactSection.swift */,
+				B507FA47241675CB00723CFA /* ContactDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B507FA492416761E00723CFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B507FA4A2416766400723CFA /* DetailView.swift */,
+				B507FA4C2416771F00723CFA /* TableRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B507FA522416796300723CFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B507FA502416795E00723CFA /* Helper.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B507FA4F2416790800723CFA /* people.json in Resources */,
 				B507FA1A24166AEC00723CFA /* Main.storyboard in Resources */,
 				B507FA1724166AEC00723CFA /* Preview Assets.xcassets in Resources */,
 				B507FA1424166AEC00723CFA /* Assets.xcassets in Resources */,
@@ -270,8 +316,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B507FA0F24166AE900723CFA /* ContentView.swift in Sources */,
+				B507FA4B2416766400723CFA /* DetailView.swift in Sources */,
+				B507FA4D2416771F00723CFA /* TableRowView.swift in Sources */,
+				B507FA48241675CB00723CFA /* ContactDetail.swift in Sources */,
 				B507FA0D24166AE900723CFA /* AppDelegate.swift in Sources */,
+				B507FA512416795E00723CFA /* Helper.swift in Sources */,
 				B507FA1224166AE900723CFA /* Chimp.xcdatamodeld in Sources */,
+				B507FA3F2416728700723CFA /* SectionHeaderView.swift in Sources */,
+				B507FA42241672F500723CFA /* ContactSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

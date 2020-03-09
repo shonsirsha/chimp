@@ -7,11 +7,33 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
+    @State private var contactNameSection: [ContactSection] = []
+
+    
     var body: some View {
-        Text("Hello World")
+        NavigationView {
+             List {
+                 ForEach(contactNameSection) { section in
+                      Section(header: SectionHeaderView(section: section)) {
+                          ForEach(section.people) { person in
+                             NavigationLink(destination: DetailView(contact: person)) {
+                                TableRowView(contact: person)
+                              }
+                          }
+                      }
+                  }
+             }
+             .frame(minWidth: 250, maxWidth: 350)
+         }.listStyle(SidebarListStyle())
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .onAppear{
+                self.loadJSON()
+        }
+    }
+    
+    func loadJSON() {
+        contactNameSection = Bundle.main.decode([ContactSection].self, from: "people.json")
     }
 }
 
