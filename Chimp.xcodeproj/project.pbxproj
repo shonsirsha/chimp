@@ -24,6 +24,8 @@
 		B507FA512416795E00723CFA /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507FA502416795E00723CFA /* Helper.swift */; };
 		B58AEF55241A70FA007106D2 /* Menu.json in Resources */ = {isa = PBXBuildFile; fileRef = B58AEF54241A70FA007106D2 /* Menu.json */; };
 		B58AEF57241A7433007106D2 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58AEF56241A7433007106D2 /* SideMenu.swift */; };
+		B58AEF59241A74F3007106D2 /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58AEF58241A74F3007106D2 /* SideMenuModel.swift */; };
+		B58AEF5D241A9C21007106D2 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58AEF5C241A9C21007106D2 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		B507FA502416795E00723CFA /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		B58AEF54241A70FA007106D2 /* Menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Menu.json; sourceTree = "<group>"; };
 		B58AEF56241A7433007106D2 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		B58AEF58241A74F3007106D2 /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
+		B58AEF5C241A9C21007106D2 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,7 @@
 			children = (
 				B507FA41241672F500723CFA /* ContactSection.swift */,
 				B507FA47241675CB00723CFA /* ContactDetail.swift */,
+				B58AEF58241A74F3007106D2 /* SideMenuModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 				B507FA4A2416766400723CFA /* DetailView.swift */,
 				B507FA4C2416771F00723CFA /* TableRowView.swift */,
 				B58AEF56241A7433007106D2 /* SideMenu.swift */,
+				B58AEF5C241A9C21007106D2 /* SwiftUIView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,7 +328,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58AEF59241A74F3007106D2 /* SideMenuModel.swift in Sources */,
 				B507FA0F24166AE900723CFA /* ContentView.swift in Sources */,
+				B58AEF5D241A9C21007106D2 /* SwiftUIView.swift in Sources */,
 				B507FA4B2416766400723CFA /* DetailView.swift in Sources */,
 				B507FA4D2416771F00723CFA /* TableRowView.swift in Sources */,
 				B507FA48241675CB00723CFA /* ContactDetail.swift in Sources */,

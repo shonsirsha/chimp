@@ -11,7 +11,7 @@ struct ContentView: View {
     @State private var contactNameSection: [ContactSection] = []
     
     var body: some View {
-        HStack {
+        HStack(spacing: 0){
             SideMenu()
             NavigationView {
                 List {
