@@ -12,29 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         HStack {
-                VStack{
-                    
-                    Image("max")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 56.0, height: 56.0)
-                        .clipShape(Circle())
-                    
-                    
-                    Text("Frederic Horsch")
-                        .font(.headline)
-                    
-                    Text("frederichorsch@web.de")
-                        .font(.system(size: 11))
-                        .padding(.top, 3)
-                    
-                    Spacer()
-                    
-                }.frame(minWidth: 150, maxWidth: 200)
-                    .padding(.top, 32)
-                
-                
-            
+            SideMenu()
             NavigationView {
                 List {
                     ForEach(contactNameSection) { section in
@@ -49,7 +27,7 @@ struct ContentView: View {
                 }
                 .frame(minWidth: 250, maxWidth: 350)
             }
-            .frame(minWidth: 300, idealWidth: .infinity, maxWidth: .infinity, minHeight: 300)
+            .frame(minWidth: 400, idealWidth: 400, maxWidth: .infinity, minHeight: 300)
             .onAppear{
                 self.loadJSON()
             }

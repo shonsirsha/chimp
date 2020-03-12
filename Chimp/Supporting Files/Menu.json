@@ -1,0 +1,27 @@
+[
+    {
+        "menuName": "Today",
+        "id": 0
+    },
+    {
+        "menuName": "Contacts",
+        "id": 1
+    },
+    {
+        "menuName": "Tasks",
+        "id": 2
+    },
+    {
+        "menuName": "Files",
+        "id": 3
+    },
+    {
+        "menuName": "E-mails",
+        "id": 4
+    },
+    {
+        "menuName": "Settings",
+        "id": 5
+    }
+
+]

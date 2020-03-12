@@ -22,6 +22,8 @@
 		B507FA4D2416771F00723CFA /* TableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507FA4C2416771F00723CFA /* TableRowView.swift */; };
 		B507FA4F2416790800723CFA /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = B507FA4E2416790800723CFA /* people.json */; };
 		B507FA512416795E00723CFA /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507FA502416795E00723CFA /* Helper.swift */; };
+		B58AEF55241A70FA007106D2 /* Menu.json in Resources */ = {isa = PBXBuildFile; fileRef = B58AEF54241A70FA007106D2 /* Menu.json */; };
+		B58AEF57241A7433007106D2 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58AEF56241A7433007106D2 /* SideMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		B507FA4C2416771F00723CFA /* TableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowView.swift; sourceTree = "<group>"; };
 		B507FA4E2416790800723CFA /* people.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
 		B507FA502416795E00723CFA /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		B58AEF54241A70FA007106D2 /* Menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Menu.json; sourceTree = "<group>"; };
+		B58AEF56241A7433007106D2 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +175,7 @@
 			children = (
 				B507FA4A2416766400723CFA /* DetailView.swift */,
 				B507FA4C2416771F00723CFA /* TableRowView.swift */,
+				B58AEF56241A7433007106D2 /* SideMenu.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 		B507FA522416796300723CFA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B58AEF54241A70FA007106D2 /* Menu.json */,
 				B507FA502416795E00723CFA /* Helper.swift */,
 			);
 			path = "Supporting Files";
@@ -289,6 +295,7 @@
 			files = (
 				B507FA4F2416790800723CFA /* people.json in Resources */,
 				B507FA1A24166AEC00723CFA /* Main.storyboard in Resources */,
+				B58AEF55241A70FA007106D2 /* Menu.json in Resources */,
 				B507FA1724166AEC00723CFA /* Preview Assets.xcassets in Resources */,
 				B507FA1424166AEC00723CFA /* Assets.xcassets in Resources */,
 			);
@@ -322,6 +329,7 @@
 				B507FA0D24166AE900723CFA /* AppDelegate.swift in Sources */,
 				B507FA512416795E00723CFA /* Helper.swift in Sources */,
 				B507FA1224166AE900723CFA /* Chimp.xcdatamodeld in Sources */,
+				B58AEF57241A7433007106D2 /* SideMenu.swift in Sources */,
 				B507FA3F2416728700723CFA /* SectionHeaderView.swift in Sources */,
 				B507FA42241672F500723CFA /* ContactSection.swift in Sources */,
 			);
