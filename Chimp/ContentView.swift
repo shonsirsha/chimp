@@ -10,18 +10,30 @@ import SwiftUI
 struct ContentView: View {
     @State private var contactNameSection: [ContactSection] = []
     
-    
     var body: some View {
         HStack {
-            List{
                 VStack{
-                               Text("YOLO")
-                                   .font(.headline)
-                           }
-                           
-            }.listStyle(SidebarListStyle())
-            .frame(minWidth: 150, maxWidth: 200)
-           
+                    
+                    Image("max")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 56.0, height: 56.0)
+                        .clipShape(Circle())
+                    
+                    
+                    Text("Frederic Horsch")
+                        .font(.headline)
+                    
+                    Text("frederichorsch@web.de")
+                        .font(.system(size: 11))
+                        .padding(.top, 3)
+                    
+                    Spacer()
+                    
+                }.frame(minWidth: 150, maxWidth: 200)
+                    .padding(.top, 32)
+                
+                
             
             NavigationView {
                 List {
@@ -37,9 +49,9 @@ struct ContentView: View {
                 }
                 .frame(minWidth: 250, maxWidth: 350)
             }
-                .frame(minWidth: 300, idealWidth: .infinity, maxWidth: .infinity, minHeight: 300)
-                .onAppear{
-                    self.loadJSON()
+            .frame(minWidth: 300, idealWidth: .infinity, maxWidth: .infinity, minHeight: 300)
+            .onAppear{
+                self.loadJSON()
             }
         }
     }

@@ -6,7 +6,7 @@ struct TableRowView: View {
     
     var body: some View {
         HStack(spacing: 20) {
-            Text(contact.firstName)
+            Text("\(contact.firstName) \(contact.lastName)")
              .truncationMode(.tail)
                 .font(.body)
                 .foregroundColor(.secondary)                   
