@@ -9,8 +9,8 @@
 import Foundation
 
 struct ContactSection: Identifiable, Codable {
-    let id = UUID()
-    let firstLetter: String
-    let people: [ContactDetail]
+    var id = UUID()
+    var firstLetter: String
+    var people: [ContactDetail]
 
 }

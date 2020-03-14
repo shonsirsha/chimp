@@ -28,6 +28,7 @@
 		B58AEF5D241A9C21007106D2 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58AEF5C241A9C21007106D2 /* SwiftUIView.swift */; };
 		B5EB3144241D1595004B93E4 /* GlobalEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB3143241D1595004B93E4 /* GlobalEnvironment.swift */; };
 		B5EB3146241D1C46004B93E4 /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB3145241D1C46004B93E4 /* Today.swift */; };
+		B5EB3148241D1D80004B93E4 /* companies.json in Resources */ = {isa = PBXBuildFile; fileRef = B5EB3147241D1D80004B93E4 /* companies.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		B58AEF5C241A9C21007106D2 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		B5EB3143241D1595004B93E4 /* GlobalEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalEnvironment.swift; sourceTree = "<group>"; };
 		B5EB3145241D1C46004B93E4 /* Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today.swift; sourceTree = "<group>"; };
+		B5EB3147241D1D80004B93E4 /* companies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = companies.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				B507FA1024166AE900723CFA /* Chimp.xcdatamodeld */,
 				B507FA1524166AEC00723CFA /* Preview Content */,
 				B507FA3E2416728700723CFA /* SectionHeaderView.swift */,
+				B5EB3147241D1D80004B93E4 /* companies.json */,
 			);
 			path = Chimp;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B507FA4F2416790800723CFA /* people.json in Resources */,
+				B5EB3148241D1D80004B93E4 /* companies.json in Resources */,
 				B507FA1A24166AEC00723CFA /* Main.storyboard in Resources */,
 				B58AEF55241A70FA007106D2 /* Menu.json in Resources */,
 				B507FA1724166AEC00723CFA /* Preview Assets.xcassets in Resources */,

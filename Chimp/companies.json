@@ -1,0 +1,25 @@
+[
+  {
+    "firstLetter": "A",
+    "companies": [
+      {
+        "name": "Apple"
+      },
+     {
+        "name": "Accenture"
+      },
+     {
+         "name": "Apollo Tyres"
+     }
+    ]
+  },
+  {
+     "firstLetter": "M",
+     "companies": [
+       {
+         "name": "McKinsey & Company"
+       }
+     ]
+   }
+]
+
