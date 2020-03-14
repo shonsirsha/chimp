@@ -11,7 +11,8 @@ import SwiftUI
 struct SideMenu: View{
     let menus = ["Today", "Contacts", "Tasks", "Files",  "E-mails", "Store", "Settings"]
     @State private var didTap:Bool = false
-    @State var currentlyClicked = -1
+    @EnvironmentObject var global: GlobalEnvironment
+
     var body: some View{
         VStack(spacing: 0){
             VStack(alignment: .center, spacing: 0){
@@ -20,16 +21,16 @@ struct SideMenu: View{
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 56.0, height: 56.0)
                     .clipShape(Circle())
-                
-                
+                    .padding(.bottom,4)
+
                 Text("Frederic Horsch")
                     .font(.headline)
                 
                 Text("frederichorsch@web.de")
                     .font(.system(size: 11))
-                    .padding(.top, 3)
+                    .padding(.top, 4)
                     
-            }.padding(.bottom, 32)
+            }.padding(.bottom, 16)
             
             
             ForEach(menus, id: \.self) { menu in
@@ -37,7 +38,7 @@ struct SideMenu: View{
                 ZStack{
                     
                     Rectangle()
-                        .fill(self.currentlyClicked == self.menus.firstIndex(of: menu)! ? Color.gray.opacity(0.3) : Color.black.opacity(0.00001))
+                        .fill(self.global.currentlyClicked == self.menus.firstIndex(of: menu)! ? Color.gray.opacity(0.3) : Color.black.opacity(0.00001))
                        .frame(height: 30)
 
                     HStack {
@@ -45,14 +46,10 @@ struct SideMenu: View{
                     }
                     
                 }.padding(.bottom, 8).gesture(TapGesture().onEnded{_ in
-                    print("BBBBA")
-                 self.currentlyClicked = self.menus.firstIndex(of: menu)!
-
+                    self.global.currentlyClicked = self.menus.firstIndex(of: menu)!
                     self.didTap = true
                   
                 })
-                
-                
             }
             
             Spacer()
@@ -62,8 +59,6 @@ struct SideMenu: View{
             .padding(.top, 32)
     }
 }
-
-
 
 struct SideMenu_Previews: PreviewProvider {
     static var previews: some View {
