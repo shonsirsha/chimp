@@ -12,8 +12,7 @@ import Foundation
 import Combine
 class GlobalEnvironment: ObservableObject{
     @Published var currentlyClicked = 0;
-    @Published var contactSelectorIndex = 0
-    @Published  var contactType = ["People","Companies"]
+   
 
 
 }

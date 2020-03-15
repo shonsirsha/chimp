@@ -8,8 +8,22 @@
 
 import SwiftUI
 import Foundation
+import Combine
+
+class IndexManager: ObservableObject {
+    @Published var contactSelectorIndex = 0 {
+        didSet {
+            publisher.send(contactSelectorIndex)
+        }
+    }
+    
+    let publisher = PassthroughSubject<Int, Never>()
+}
+
 struct ContentView: View {
+        @ObservedObject private var indexManager = IndexManager()
     @State private var contactNameSection: [ContactSection] = []
+    private var contactType = ["People","Companies"]
 
     @EnvironmentObject var global: GlobalEnvironment
     @State private var searchContent = "";
@@ -35,13 +49,16 @@ struct ContentView: View {
                 NavigationView {
                     VStack(spacing: 0){
                         HStack(spacing: 0){
-                            Picker("", selection: $global.contactSelectorIndex) {
-                                ForEach(0 ..< global.contactType.count) { index in
-                                    Text(self.global.contactType[index]).tag(index)
+                            Picker("", selection: $indexManager.contactSelectorIndex) {
+                                ForEach(0 ..< contactType.count) { index in
+                                    Text(self.contactType[index]).tag(index)
                                 }
-                            }.pickerStyle(SegmentedPickerStyle())
+                                }.pickerStyle(SegmentedPickerStyle())
+                                .onReceive(indexManager.publisher) { int in
+                                    self.loadJSON(num: int)
+                                       }
                             .fixedSize()
-                          .frame(width: 40)
+                                .frame(width: 40)
                            
                         }
                     
@@ -69,7 +86,7 @@ struct ContentView: View {
                 .frame(minWidth: 400, idealWidth: 400, maxWidth: .infinity, minHeight: 300)
                 .opacity(1)
                 .onAppear{
-                    self.loadJSON(num: self.global.contactSelectorIndex)
+                    self.loadJSON(num: self.indexManager.contactSelectorIndex)
                 }
                 //                Today().opacity(global.currentlyClicked == 0 ? 1 : 0)
             }
@@ -78,7 +95,7 @@ struct ContentView: View {
     }
     
     func loadJSON(num: Int) {
-        print("ASDASD \(global.contactType[global.contactSelectorIndex])")
+        print("ASDASD ")
         if(num == 0){
             contactNameSection = Bundle.main.decode([ContactSection].self, from: "people.json")
         }else{
