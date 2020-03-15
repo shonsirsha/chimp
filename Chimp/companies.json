@@ -1,23 +1,30 @@
 [
   {
     "firstLetter": "A",
-    "companies": [
+    "people": [
       {
-        "name": "Apple"
+        "firstName": "Apple",
+        "lastName": ""
       },
      {
-        "name": "Accenture"
+        "firstName": "Accenture",
+        "lastName": ""
+
       },
      {
-         "name": "Apollo Tyres"
+         "firstName": "Apollo Tyres",
+         "lastName": ""
+
      }
     ]
   },
   {
      "firstLetter": "M",
-     "companies": [
+     "people": [
        {
-         "name": "McKinsey & Company"
+         "firstName": "McKinsey & Company",
+         "lastName": "",
+
        }
      ]
    }
