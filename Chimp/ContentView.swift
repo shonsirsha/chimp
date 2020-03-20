@@ -21,29 +21,18 @@ class IndexManager: ObservableObject {
 }
 
 struct ContentView: View {
-        @ObservedObject private var indexManager = IndexManager()
+    @ObservedObject private var indexManager = IndexManager()
     @State private var contactNameSection: [ContactSection] = []
     private var contactType = ["People","Companies"]
-
+    
     @EnvironmentObject var global: GlobalEnvironment
     @State private var searchContent = "";
     
     
     var body: some View {
-      
+        
         HStack(spacing: 0){
             
-            //           Button(action: {
-            //            self.loadJSON(num:)
-            //
-            //
-            //
-            //
-            //
-            ////            self.contactNameSection = self.contactNameSection.filter { $0.contains("N")}
-            //           }) {
-            //              Text("Test")
-            //           }
             SideMenu()
             ZStack{
                 NavigationView {
@@ -53,18 +42,18 @@ struct ContentView: View {
                                 ForEach(0 ..< contactType.count) { index in
                                     Text(self.contactType[index]).tag(index)
                                 }
-                                }.pickerStyle(SegmentedPickerStyle())
+                            }.pickerStyle(SegmentedPickerStyle())
                                 .onReceive(indexManager.publisher) { int in
                                     self.loadJSON(num: int)
-                                       }
+                            }
                             .fixedSize()
-                                .frame(width: 40)
-                           
+                            .frame(width: 40)
+                            
                         }
-                    
-                       .padding(.top, 8)
-                       .padding(.bottom, 8)
-
+                            
+                        .padding(.top, 8)
+                        .padding(.bottom, 8)
+                        
                         
                         
                         List {
@@ -84,11 +73,11 @@ struct ContentView: View {
                     
                 }
                 .frame(minWidth: 400, idealWidth: 400, maxWidth: .infinity, minHeight: 300)
-                .opacity(1)
+                .opacity(global.currentlyClicked == 0 ? 0 : 1)
                 .onAppear{
                     self.loadJSON(num: self.indexManager.contactSelectorIndex)
                 }
-                //                Today().opacity(global.currentlyClicked == 0 ? 1 : 0)
+                Today().opacity(global.currentlyClicked == 0 ? 1 : 0)
             }
             
         }
