@@ -3,6 +3,10 @@ import SwiftUI
 
 
 struct DetailView: View {
+    @ObservedObject private var indexManager = IndexManager()
+//      @State private var contactNameSection: [ContactSection] = []
+       var contactMethod = ["Calls","E-Mails", "Notes"]
+    
     let contact: ContactDetail
     @State private var favoriteColor = 0
     var body: some View {
@@ -18,8 +22,6 @@ struct DetailView: View {
                     Spacer()
                 }
                 VStack(alignment: .leading){
-                    
-                    
                     HStack{
                         Text("Name: ").font(.system(size: 14)).fontWeight(.light)
                         Text("\(contact.firstName) \(contact.lastName)").font(.system(size: 14)).padding(.leading,-8)
@@ -45,8 +47,15 @@ struct DetailView: View {
                         Text("LoremTag").font(.system(size: 11)).fontWeight(.bold).padding(EdgeInsets(top: 3, leading: 12, bottom: 4, trailing: 12)).background(Color.purple).cornerRadius(13)
                     }.padding(EdgeInsets(top: 0, leading: 16, bottom: 8, trailing: 0))
                     
-                    
-                    
+                    VStack{
+                        Picker("", selection: $indexManager.contactSelectorIndex) {
+                                                   ForEach(0 ..< contactMethod.count) { index in
+                                                       Text(self.contactMethod[index]).tag(index)
+                                                   }
+                                               }.pickerStyle(SegmentedPickerStyle())
+                     
+                    }.padding(EdgeInsets(top: 32, leading: 240, bottom: 8, trailing: 240))
+                 
                     
                     
                 }
@@ -58,15 +67,7 @@ struct DetailView: View {
                 
             }.padding(.top,32).padding(.leading,32)
             
-            VStack(alignment: .center) {
-                Picker(selection: $favoriteColor, label: Text("")) {
-                    Text("Red").tag(0)
-                    Text("Green").tag(1)
-                    Text("Blue").tag(2)
-                }.pickerStyle(SegmentedPickerStyle())
-                
-//                Text("Value: \(favoriteColor)")
-            }.padding(.leading,128).padding(.trailing,128)
+          
         }
         
         
