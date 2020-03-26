@@ -13,51 +13,20 @@ struct SideMenu: View{
     @State private var didTap:Bool = false
     @EnvironmentObject var global: GlobalEnvironment
 
-    var body: some View{
-        VStack(spacing: 0){
-            VStack(alignment: .center, spacing: 0){
-                Image("max")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 56.0, height: 56.0)
-                    .clipShape(Circle())
-                    .padding(.bottom,4)
-
-                Text("Frederic Horsch")
-                    .font(.headline)
-                
-                Text("frederichorsch@web.de")
-                    .font(.system(size: 11))
-                    .padding(.top, 4)
-                    
-            }.padding(.bottom, 16)
-            
-            
-            ForEach(menus, id: \.self) { menu in
-                
-                ZStack{
-                    
-                    Rectangle()
-                        .fill(self.global.currentlyClicked == self.menus.firstIndex(of: menu)! ? Color.gray.opacity(0.3) : Color.black.opacity(0.00001))
-                       .frame(height: 30)
-
-                    HStack {
-                        Text("\(menu)")
+   var body: some View {
+           NavigationView {
+               VStack {
+                   Text("Huhu")
+                    List {
+                        ForEach(1 ... 10, id: \.self) { index in
+                            NavigationLink(destination: Text("\(index)")) {
+                                Text("Link \(index)")
+                            }
+                        }
                     }
-                    
-                }.padding(.bottom, 8).gesture(TapGesture().onEnded{_ in
-                    self.global.currentlyClicked = self.menus.firstIndex(of: menu)!
-                    self.didTap = true
-                  
-                })
-            }
-            
-            Spacer()
-            
-            
-        }.frame(minWidth: 130, maxWidth: 180)
-            .padding(.top, 32)
-    }
+               }
+           }.frame(maxWidth: .infinity, maxHeight: .infinity).listStyle(SidebarListStyle())
+   }
 }
 
 struct SideMenu_Previews: PreviewProvider {
