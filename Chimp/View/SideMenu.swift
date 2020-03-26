@@ -76,7 +76,7 @@ struct SideMenu: View{
 //    }
     }
     
-}
+
 
 struct SideMenu_Previews: PreviewProvider {
     static var previews: some View {
