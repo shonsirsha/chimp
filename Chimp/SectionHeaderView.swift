@@ -15,8 +15,9 @@ struct SectionHeaderView: View {
    var body: some View {
        HStack(spacing: 20) {
            Text(section.firstLetter)
+            .font(.system(size: 12, weight: .regular))
                .layoutPriority(1)
-       }
+       }.padding(.leading, 8)
    }
 }
 

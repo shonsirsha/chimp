@@ -34,9 +34,12 @@ struct ContactView: View {
                         
                     }
                         
-                    .padding(.top, 8)
-                    .padding(.bottom, 8)
+                    .padding(.top, 12)
+                    .padding(.bottom, 12)
                     
+                    Divider()
+                        .padding(.bottom, 12)
+                      
                     
                     
                     List {
@@ -50,8 +53,8 @@ struct ContactView: View {
                                 }
                             }
                         }
-                    }
-                    .frame(minWidth: 250, maxWidth: 290)
+                    }.padding(.trailing, -16)
+                    .frame(minWidth: 250, maxWidth: 260)
                 }
                 
             }
