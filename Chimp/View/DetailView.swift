@@ -68,7 +68,7 @@ struct DetailView: View {
                            .padding()
 
 
-                    }.padding(EdgeInsets(top: 32, leading: 120, bottom: 8, trailing: 120))
+                    }.padding(EdgeInsets(top: 32, leading: 16, bottom: 8, trailing: 16))
                     
                 }
                 .frame(minWidth: 50, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: Alignment.topLeading)
