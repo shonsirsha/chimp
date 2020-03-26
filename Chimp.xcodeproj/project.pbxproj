@@ -29,6 +29,7 @@
 		B5EB3144241D1595004B93E4 /* GlobalEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB3143241D1595004B93E4 /* GlobalEnvironment.swift */; };
 		B5EB3146241D1C46004B93E4 /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EB3145241D1C46004B93E4 /* Today.swift */; };
 		B5EB314C241D4A72004B93E4 /* companies.json in Resources */ = {isa = PBXBuildFile; fileRef = B5EB314B241D4A72004B93E4 /* companies.json */; };
+		B5EF128A242CB887007BA684 /* PickerSamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF1289242CB887007BA684 /* PickerSamplesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		B5EB3143241D1595004B93E4 /* GlobalEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalEnvironment.swift; sourceTree = "<group>"; };
 		B5EB3145241D1C46004B93E4 /* Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today.swift; sourceTree = "<group>"; };
 		B5EB314B241D4A72004B93E4 /* companies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = companies.json; sourceTree = "<group>"; };
+		B5EF1289242CB887007BA684 /* PickerSamplesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerSamplesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 		B507FA492416761E00723CFA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B5EF1289242CB887007BA684 /* PickerSamplesView.swift */,
 				B507FA4A2416766400723CFA /* DetailView.swift */,
 				B507FA4C2416771F00723CFA /* TableRowView.swift */,
 				B58AEF56241A7433007106D2 /* SideMenu.swift */,
@@ -360,6 +363,7 @@
 				B58AEF57241A7433007106D2 /* SideMenu.swift in Sources */,
 				B507FA3F2416728700723CFA /* SectionHeaderView.swift in Sources */,
 				B507FA42241672F500723CFA /* ContactSection.swift in Sources */,
+				B5EF128A242CB887007BA684 /* PickerSamplesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
