@@ -19,15 +19,15 @@ struct SideMenu: View{
                        VStack {
                            Text("Huhu")
                             List {
-                                 NavigationLink(destination: DetailView2()) {
-                                                                      Text("Link ")
+                                 NavigationLink(destination: Today()) {
+                                                                      Text("Today")
                                                                   }
-                                NavigationLink(destination: DetailView3()) {
-                                                                      Text("Link2 ")
+                                NavigationLink(destination: ContactView()) {
+                                                                      Text("Contacts")
                                                                   }
-                            }
+                        }
                        }
-                   }.frame(maxWidth: .infinity, maxHeight: .infinity).listStyle(SidebarListStyle())
+        }.frame( maxWidth: .infinity, maxHeight: .infinity).listStyle(SidebarListStyle())
         
         
 //        VStack(spacing: 0){
@@ -93,6 +93,7 @@ struct DetailView2: View {
 
 struct DetailView3: View {
     var body: some View{
-            Text("xasdasd").frame(maxWidth: .infinity, maxHeight: .infinity)
+        Text("xasdasd").frame(minWidth:450, maxWidth: .infinity, minHeight: 100, maxHeight: .infinity)
     }
+}
 }

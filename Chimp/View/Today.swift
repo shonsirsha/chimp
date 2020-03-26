@@ -10,7 +10,7 @@ import SwiftUI
 
 struct Today: View {
     var body: some View {
-        Text("Today")
+        Text("Today").frame(minWidth: 450, maxWidth: .infinity, minHeight: 100, maxHeight: .infinity)
     }
 }
 

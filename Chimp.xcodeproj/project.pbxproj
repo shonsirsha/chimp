@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		507FFDC3242CF365006DA2AB /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507FFDC2242CF365006DA2AB /* ContactView.swift */; };
 		B507FA0D24166AE900723CFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507FA0C24166AE900723CFA /* AppDelegate.swift */; };
 		B507FA0F24166AE900723CFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507FA0E24166AE900723CFA /* ContentView.swift */; };
 		B507FA1224166AE900723CFA /* Chimp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B507FA1024166AE900723CFA /* Chimp.xcdatamodeld */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		507FFDC2242CF365006DA2AB /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		B507FA0924166AE900723CFA /* Chimp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chimp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B507FA0C24166AE900723CFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B507FA0E24166AE900723CFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				B58AEF56241A7433007106D2 /* SideMenu.swift */,
 				B58AEF5C241A9C21007106D2 /* SwiftUIView.swift */,
 				B5EB3145241D1C46004B93E4 /* Today.swift */,
+				507FFDC2242CF365006DA2AB /* ContactView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				B58AEF59241A74F3007106D2 /* SideMenuModel.swift in Sources */,
 				B507FA0F24166AE900723CFA /* ContentView.swift in Sources */,
 				B58AEF5D241A9C21007106D2 /* SwiftUIView.swift in Sources */,
+				507FFDC3242CF365006DA2AB /* ContactView.swift in Sources */,
 				B507FA4B2416766400723CFA /* DetailView.swift in Sources */,
 				B507FA4D2416771F00723CFA /* TableRowView.swift in Sources */,
 				B5EB3146241D1C46004B93E4 /* Today.swift in Sources */,
