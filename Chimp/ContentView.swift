@@ -8,17 +8,7 @@
 
 import SwiftUI
 import Foundation
-import Combine
 
-class IndexManager: ObservableObject {
-    @Published var contactSelectorIndex = 0 {
-        didSet {
-            publisher.send(contactSelectorIndex)
-        }
-    }
-    
-    let publisher = PassthroughSubject<Int, Never>()
-}
 
 struct ContentView: View {
 

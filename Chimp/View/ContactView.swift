@@ -24,6 +24,7 @@ struct ContactView: View {
                         Picker("", selection: $indexManager.contactSelectorIndex) {
                             ForEach(0 ..< contactType.count) { index in
                                 Text(self.contactType[index]).tag(index)
+                                
                             }
                         }.pickerStyle(SegmentedPickerStyle())
                             .onReceive(indexManager.publisher) { int in
