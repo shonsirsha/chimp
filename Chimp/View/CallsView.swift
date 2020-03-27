@@ -13,170 +13,26 @@ struct CallsView: View {
         VStack(spacing: 0){
             List{
                 
-                VStack(spacing: 0){
-                    HStack(spacing: 0){
-                        HStack(spacing: 0){
-                            Text("21.11.2019").font(.system(size: 13, weight: .regular))
-                                .padding(.trailing, 8)
-                            Text("17:03").font(.system(size: 13, weight: .regular))
-                            Spacer()
-                        }
-                        Text("20:21").font(.system(size: 13, weight: .regular))
-                        
-                    }      .padding(.bottom,8)
-                        .padding(.top,8)
-                    Divider()
-                    
+                ForEach(1...25, id: \.self) { _ in
+                        VStack(spacing: 0){
+                                    HStack(spacing: 0){
+                                        HStack(spacing: 0){
+                                            Image("calendar-w").resizable().frame(width: 14, height: 14).padding(.trailing, 4)
+                                            Text("21.11.2019").font(.system(size: 13, weight: .regular))
+                                                .padding(.trailing, 8)
+                                            
+                                            Image("clock-w").resizable().frame(width: 14, height: 14).padding(.trailing, 4)
+                                            Text("17:03").font(.system(size: 13, weight: .regular))
+                                            Spacer()
+                                        }
+                                        Text("20:21").font(.system(size: 13, weight: .regular))
+                                        
+                                    }      .padding(.bottom,8)
+                                        .padding(.top,8)
+                                    Divider()
+                                    
+                                }
                 }
-                
-                VStack(spacing: 0){
-                    HStack(spacing: 0){
-                        HStack(spacing: 0){
-                            Text("21.11.2019").font(.system(size: 13, weight: .regular))
-                                .padding(.trailing, 8)
-                            Text("17:03").font(.system(size: 13, weight: .regular))
-                            Spacer()
-                        }
-                        Text("20:21").font(.system(size: 13, weight: .regular))
-                        
-                    }      .padding(.bottom,8)
-                        .padding(.top,8)
-                    Divider()
-                    
-                }
-                
-                
-                VStack(spacing: 0){
-                    HStack(spacing: 0){
-                        HStack(spacing: 0){
-                            Text("21.11.2019").font(.system(size: 13, weight: .regular))
-                                .padding(.trailing, 8)
-                            Text("17:03").font(.system(size: 13, weight: .regular))
-                            Spacer()
-                        }
-                        Text("20:21").font(.system(size: 13, weight: .regular))
-                        
-                    }      .padding(.bottom,8)
-                        .padding(.top,8)
-                    Divider()
-                    
-                }
-                
-                VStack(spacing: 0){
-                    HStack(spacing: 0){
-                        HStack(spacing: 0){
-                            Text("21.11.2019").font(.system(size: 13, weight: .regular))
-                                .padding(.trailing, 8)
-                            Text("17:03").font(.system(size: 13, weight: .regular))
-                            Spacer()
-                        }
-                        Text("20:21").font(.system(size: 13, weight: .regular))
-                        
-                    }      .padding(.bottom,8)
-                        .padding(.top,8)
-                    Divider()
-                    
-                }
-                
-                VStack(spacing: 0){
-                    HStack(spacing: 0){
-                        HStack(spacing: 0){
-                            Text("21.11.2019").font(.system(size: 13, weight: .regular))
-                                .padding(.trailing, 8)
-                            Text("17:03").font(.system(size: 13, weight: .regular))
-                            Spacer()
-                        }
-                        Text("20:21").font(.system(size: 13, weight: .regular))
-                        
-                    }      .padding(.bottom,8)
-                        .padding(.top,8)
-                    Divider()
-                    
-                }
-                
-                
-                VStack(spacing: 0){
-                    HStack(spacing: 0){
-                        HStack(spacing: 0){
-                            Text("21.11.2019").font(.system(size: 13, weight: .regular))
-                                .padding(.trailing, 8)
-                            Text("17:03").font(.system(size: 13, weight: .regular))
-                            Spacer()
-                        }
-                        Text("20:21").font(.system(size: 13, weight: .regular))
-                        
-                    }      .padding(.bottom,8)
-                        .padding(.top,8)
-                    Divider()
-                    
-                }
-                
-                VStack(spacing: 0){
-                    HStack(spacing: 0){
-                        HStack(spacing: 0){
-                            Text("21.11.2019").font(.system(size: 13, weight: .regular))
-                                .padding(.trailing, 8)
-                            Text("17:03").font(.system(size: 13, weight: .regular))
-                            Spacer()
-                        }
-                        Text("20:21").font(.system(size: 13, weight: .regular))
-                        
-                    }      .padding(.bottom,8)
-                        .padding(.top,8)
-                    Divider()
-                    
-                }
-                
-                VStack(spacing: 0){
-                    HStack(spacing: 0){
-                        HStack(spacing: 0){
-                            Text("21.11.2019").font(.system(size: 13, weight: .regular))
-                                .padding(.trailing, 8)
-                            Text("17:03").font(.system(size: 13, weight: .regular))
-                            Spacer()
-                        }
-                        Text("20:21").font(.system(size: 13, weight: .regular))
-                        
-                    }      .padding(.bottom,8)
-                        .padding(.top,8)
-                    Divider()
-                    
-                }
-                
-                VStack(spacing: 0){
-                    HStack(spacing: 0){
-                        HStack(spacing: 0){
-                            Text("21.11.2019").font(.system(size: 13, weight: .regular))
-                                .padding(.trailing, 8)
-                            Text("17:03").font(.system(size: 13, weight: .regular))
-                            Spacer()
-                        }
-                        Text("20:21").font(.system(size: 13, weight: .regular))
-                        
-                    }      .padding(.bottom,8)
-                        .padding(.top,8)
-                    Divider()
-                    
-                }
-                
-                VStack(spacing: 0){
-                    HStack(spacing: 0){
-                        HStack(spacing: 0){
-                            Text("21.11.2019").font(.system(size: 13, weight: .regular))
-                                .padding(.trailing, 8)
-                            Text("17:03").font(.system(size: 13, weight: .regular))
-                            Spacer()
-                        }
-                        Text("20:21").font(.system(size: 13, weight: .regular))
-                        
-                    }      .padding(.bottom,8)
-                        .padding(.top,8)
-                    Divider()
-                    
-                }
-                
-                
-                
                 
                 
             }

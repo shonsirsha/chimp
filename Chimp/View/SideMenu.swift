@@ -32,24 +32,24 @@ struct SideMenu: View{
                     .padding(EdgeInsets(top: 4, leading: 0, bottom: 24, trailing: 0))
                 List {
                     NavigationLink(destination: Today()) {
-                        Text("Today").font(.system(size: 12, weight: .regular))
+                        Text("Today").font(.system(size: 12, weight: .regular)) .padding(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
                     }
                     NavigationLink(destination: ContactView()) {
-                        Text("Contacts").font(.system(size: 12, weight: .regular))
+                        Text("Contacts").font(.system(size: 12, weight: .regular)).padding(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
                         
                     }
                     
                     NavigationLink(destination: ContactView()) {
-                        Text("Tasks").font(.system(size: 12, weight: .regular))
+                        Text("Tasks").font(.system(size: 12, weight: .regular)).padding(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
                         
                     }
                     
                     NavigationLink(destination: ContactView()) {
-                        Text("Files").font(.system(size: 12, weight: .regular))
+                        Text("Files").font(.system(size: 12, weight: .regular)).padding(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
                         
                     }
                     NavigationLink(destination: ContactView()) {
-                        Text("E-mails").font(.system(size: 12, weight: .regular))
+                        Text("E-mails").font(.system(size: 12, weight: .regular)).padding(EdgeInsets(top: 0, leading: 0, bottom: 8, trailing: 0))
                         
                     }
                 }.frame(minWidth: 156, maxWidth: 220, maxHeight: .infinity)
