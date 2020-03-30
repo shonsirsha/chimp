@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct CallsView: View {
+    
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
+
     var body: some View {
         VStack(spacing: 0){
             List{
@@ -17,11 +20,11 @@ struct CallsView: View {
                         VStack(spacing: 0){
                                     HStack(spacing: 0){
                                         HStack(spacing: 0){
-                                            Image("calendar-w").resizable().frame(width: 14, height: 14).padding(.trailing, 4)
+                                            Image(self.colorScheme == .dark ? "calendar-w": "calendar-d").resizable().frame(width: 14, height: 14).padding(.trailing, 4)
                                             Text("21.11.2019").font(.system(size: 13, weight: .regular))
                                                 .padding(.trailing, 8)
                                             
-                                            Image("clock-w").resizable().frame(width: 14, height: 14).padding(.trailing, 4)
+                                            Image(self.colorScheme == .dark ? "clock-w": "clock-d").resizable().frame(width: 14, height: 14).padding(.trailing, 4)
                                             Text("17:03").font(.system(size: 13, weight: .regular))
                                             Spacer()
                                         }

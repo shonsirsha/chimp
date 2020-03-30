@@ -12,7 +12,5 @@ import Foundation
 import Combine
 class GlobalEnvironment: ObservableObject{
     @Published var currentlyClicked = 0;
-   
-
 
 }

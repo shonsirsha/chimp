@@ -9,6 +9,9 @@ struct DetailView: View {
     //      @State private var contactNameSection: [ContactSection] = []
     var contactMethod = ["Calls","E-Mails", "Notes"]
     
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
+    
+    
     let contact: ContactDetail
     @State private var favoriteColor = 0
     var body: some View {
@@ -20,20 +23,20 @@ struct DetailView: View {
                         Button(action: {
                             print("share pressed")
                         }) {
-                            Image("share-w")  .resizable()
+                            Image(colorScheme == .dark ? "share-w": "share-d").resizable()
                                 .frame(width: 15, height: 20.4)    .aspectRatio(contentMode: .fit)
                             
                         }.buttonStyle(PlainButtonStyle()) .padding(.trailing, 8)
-                       Button(action: {
+                        Button(action: {
                             print("trash pressed")
                         }) {
-                            Image("trash-w")  .resizable()
+                            Image(colorScheme == .dark ? "trash-w": "trash-d")  .resizable()
                                 .frame(width: 18, height: 20.4)    .aspectRatio(contentMode: .fit)
                             
                         }.buttonStyle(PlainButtonStyle())
                         Spacer()
                     }
-                   Button(action: {
+                    Button(action: {
                         print("edit pressed")
                     }) {
                         Text("Edit")
@@ -64,7 +67,7 @@ struct DetailView: View {
                     
                     HStack{
                         Text("Category: ").font(.system(size: 14)).fontWeight(.light)
-                        Text("Client").font(.system(size: 13)).fontWeight(.regular).padding(EdgeInsets(top: 3, leading: 12, bottom: 3, trailing: 12)).background(Color.orange).cornerRadius(4)
+                        Text("Client").foregroundColor(Color.white).font(.system(size: 13)).fontWeight(.regular).padding(EdgeInsets(top: 3, leading: 12, bottom: 3, trailing: 12)).background(Color.orange).cornerRadius(4)
                         
                     }.padding(EdgeInsets(top: 0, leading: 16, bottom: 8, trailing: 0))
                     
@@ -75,9 +78,9 @@ struct DetailView: View {
                     }.padding(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 0))
                     
                     HStack{
-                        Text("LoremTag").font(.system(size: 13)).fontWeight(.regular).padding(EdgeInsets(top: 3, leading: 12, bottom: 4, trailing: 12)).background(Color.red).cornerRadius(4)
+                        Text("LoremTag").foregroundColor(Color.white).font(.system(size: 13)).fontWeight(.regular).padding(EdgeInsets(top: 3, leading: 12, bottom: 4, trailing: 12)).background(Color.red).cornerRadius(4)
                         
-                        Text("LoremTag").font(.system(size: 13)).fontWeight(.regular).padding(EdgeInsets(top: 3, leading: 12, bottom: 4, trailing: 12)).background(Color.purple).cornerRadius(4)
+                        Text("LoremTag").foregroundColor(Color.white).font(.system(size: 13)).fontWeight(.regular).padding(EdgeInsets(top: 3, leading: 12, bottom: 4, trailing: 12)).background(Color.purple).cornerRadius(4)
                     }.padding(EdgeInsets(top: 0, leading: 16, bottom: 8, trailing: 0))
                     
                     
