@@ -11,8 +11,8 @@ import SwiftUI
 struct ContactView: View {
     @ObservedObject private var indexManager = IndexManager()
     @State private var contactNameSection: [ContactSection] = []
-    private var contactType = ["People","Companies"]
-    
+    private var contactType = ["P","C"]
+        @State private var name: String = "Tim"
     @EnvironmentObject var global: GlobalEnvironment
     @State private var searchContent = "";
     
@@ -21,6 +21,7 @@ struct ContactView: View {
             NavigationView {
                 VStack(spacing: 0){
                     HStack(spacing: 0){
+                        TextField("Search...", text: $name)
                         Picker("", selection: $indexManager.contactSelectorIndex) {
                             ForEach(0 ..< contactType.count) { index in
                                 Text(self.contactType[index]).tag(index)
@@ -29,14 +30,15 @@ struct ContactView: View {
                         }.pickerStyle(SegmentedPickerStyle())
                             .onReceive(indexManager.publisher) { int in
                                 self.loadJSON(num: int)
-                        }
-                        .fixedSize()
-                        .frame(width: 40)
+                        } .padding(.leading, 2)
+                            .padding(.trailing,2)
                         
                     }
-                        
+                   
                     .padding(.top, 12)
                     .padding(.bottom, 12)
+                    .padding(.leading, 8)
+
                     
                     Divider()
                         .padding(.bottom, 12)
@@ -69,7 +71,6 @@ struct ContactView: View {
     
     
     func loadJSON(num: Int) {
-        print("ASDASD ")
         if(num == 0){
             contactNameSection = Bundle.main.decode([ContactSection].self, from: "people.json")
         }else{
