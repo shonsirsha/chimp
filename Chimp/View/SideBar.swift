@@ -10,6 +10,7 @@ import SwiftUI
 
 struct SideBar: View {
     let thisWindow:NSWindow?
+    
     var body: some View {
         Text("test")
             .frame(width: 72, height: 400)

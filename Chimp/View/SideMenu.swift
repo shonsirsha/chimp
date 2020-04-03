@@ -9,10 +9,11 @@
 import SwiftUI
 
 struct SideMenu: View{
+
     let menus = ["Today", "Contacts", "Tasks", "Files",  "E-mails", "Store", "Settings"]
     @State private var didTap:Bool = false
     @EnvironmentObject var global: GlobalEnvironment
-    
+    @State var selection: Int?
     var body: some View{
         
         NavigationView {
@@ -30,8 +31,8 @@ struct SideMenu: View{
                 Text("frederichorsch@web.de")
                     .font(.system(size: 9))
                     .padding(EdgeInsets(top: 4, leading: 0, bottom: 24, trailing: 0))
-                List {
-                    NavigationLink(destination: Today()) {
+                List(selection: self.$selection) {
+                    NavigationLink(destination: Today(), tag: 0, selection: self.$selection) {
                         Text("Today").font(.system(size: 12, weight: .regular)) .padding(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
                     }
                     NavigationLink(destination: ContactView()) {
@@ -52,7 +53,9 @@ struct SideMenu: View{
                         Text("E-mails").font(.system(size: 12, weight: .regular)).padding(EdgeInsets(top: 0, leading: 0, bottom: 8, trailing: 0))
                         
                     }
-                }.frame(minWidth: 156, maxWidth: 220, maxHeight: .infinity)
+                }.onAppear{
+                    self.selection = 0
+                }
             }
         }.frame(minWidth: 450, maxWidth: .infinity, maxHeight: .infinity).listStyle(SidebarListStyle())
         

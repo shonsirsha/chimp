@@ -12,6 +12,10 @@ import Foundation
 
 struct ContentView: View {
     
+
+    
+  
+    
     private func sidebarSetup(){
         var sidebarWindow:NSWindow
                
@@ -22,19 +26,27 @@ struct ContentView: View {
                    backing: .buffered, defer: false)
                
                //hide the close btns,etc.
-               sidebarWindow.standardWindowButton(.closeButton)!.isHidden = true
-               sidebarWindow.standardWindowButton(.miniaturizeButton)!.isHidden = true
-               sidebarWindow.standardWindowButton(.zoomButton)!.isHidden = true
-               sidebarWindow.titlebarAppearsTransparent = true
+           sidebarWindow.standardWindowButton(.closeButton)!.isHidden = true
+           sidebarWindow.standardWindowButton(.miniaturizeButton)!.isHidden = true
+           sidebarWindow.standardWindowButton(.zoomButton)!.isHidden = true
+           sidebarWindow.titlebarAppearsTransparent = true
+        
+        //drag by its body
+        sidebarWindow.isMovableByWindowBackground = true
                
                //colors
                sidebarWindow.backgroundColor = NSColor(red: 0,green: 0,blue: 0,alpha: 0.75)
                sidebarWindow.hasShadow = false
                sidebarWindow.isOpaque = false
+        
+        //corner radius
+               
+              
                
                //always ontop
                sidebarWindow.level = .floating
                sidebarWindow.makeKeyAndOrderFront(nil)
+        
                
                if let myScreen = NSScreen.main {
                    let windowFrame = myScreen.frame
@@ -46,8 +58,9 @@ struct ContentView: View {
                    print(windowFrame)
                }
                
-               //
-               sidebarWindow.contentView = NSHostingView(rootView: SideBar(thisWindow: sidebarWindow))
+        sidebarWindow.contentView = NSHostingView(rootView: SideBar(thisWindow: sidebarWindow))
+
+   
     }
     
     private func initSetup() {
@@ -57,11 +70,12 @@ struct ContentView: View {
     
     var body: some View {
         
+        
         HStack(spacing: 0){
             
             SideMenu()
 
-        }.onAppear(perform: initSetup)
+        }.onAppear(perform: sidebarSetup)
     }
     
 
