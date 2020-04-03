@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		502EE9532436E8CB00310365 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EE9522436E8CB00310365 /* SideBar.swift */; };
 		507FFDC3242CF365006DA2AB /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507FFDC2242CF365006DA2AB /* ContactView.swift */; };
 		507FFDC5242D4427006DA2AB /* CallsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507FFDC4242D4427006DA2AB /* CallsView.swift */; };
 		50C2768E242DDFE20032ACB4 /* TransparentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C2768D242DDFE20032ACB4 /* TransparentButton.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		502EE9522436E8CB00310365 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
 		507FFDC2242CF365006DA2AB /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		507FFDC4242D4427006DA2AB /* CallsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsView.swift; sourceTree = "<group>"; };
 		50C2768D242DDFE20032ACB4 /* TransparentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentButton.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				B5EB3145241D1C46004B93E4 /* Today.swift */,
 				507FFDC2242CF365006DA2AB /* ContactView.swift */,
 				507FFDC4242D4427006DA2AB /* CallsView.swift */,
+				502EE9522436E8CB00310365 /* SideBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				B507FA4D2416771F00723CFA /* TableRowView.swift in Sources */,
 				B5EB3146241D1C46004B93E4 /* Today.swift in Sources */,
 				B507FA48241675CB00723CFA /* ContactDetail.swift in Sources */,
+				502EE9532436E8CB00310365 /* SideBar.swift in Sources */,
 				B507FA0D24166AE900723CFA /* AppDelegate.swift in Sources */,
 				B507FA512416795E00723CFA /* Helper.swift in Sources */,
 				B5EB3144241D1595004B93E4 /* GlobalEnvironment.swift in Sources */,

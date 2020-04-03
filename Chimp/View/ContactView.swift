@@ -12,10 +12,10 @@ struct ContactView: View {
     @ObservedObject private var indexManager = IndexManager()
     @State private var contactNameSection: [ContactSection] = []
     private var contactType = ["P","C"]
-        @State private var name: String = "Tim"
+    @State private var name: String = ""
     @EnvironmentObject var global: GlobalEnvironment
     @State private var searchContent = "";
-    
+    @State private var showingAlert = false
     var body: some View {
         ZStack{
             NavigationView {
@@ -30,19 +30,33 @@ struct ContactView: View {
                         }.pickerStyle(SegmentedPickerStyle())
                             .onReceive(indexManager.publisher) { int in
                                 self.loadJSON(num: int)
-                        } .padding(.leading, 2)
-                            .padding(.trailing,2)
+                        }  .fixedSize()
+                                                                     .frame(width: 30) .padding(.leading, 24)
+                            .padding(.trailing,30)
+                      
+                        
+                        
+//                        Button(action: {
+//                            self.showingAlert = true
+//                        }) {
+//                            Text("Show Alert")
+//                        }
+//                        .alert(isPresented:$showingAlert) {
+//                            Alert(title: Text("SwiftUI Alert!"), message: Text("This is so easy"), primaryButton: .default(Text("Yes")) {
+//                                print("Yeah")
+//                                }, secondaryButton: .destructive(Text("Cancel")))
+//                        }
                         
                     }
-                   
+                        
                     .padding(.top, 12)
                     .padding(.bottom, 12)
                     .padding(.leading, 8)
-
+                    
                     
                     Divider()
                         .padding(.bottom, 12)
-                      
+                    
                     
                     
                     List {
@@ -57,7 +71,7 @@ struct ContactView: View {
                             }
                         }
                     }.padding(.trailing, -16)
-                    .frame(minWidth: 250, maxWidth: 260)
+                        .frame(minWidth: 250, maxWidth: 260)
                 }
                 
             }
@@ -65,7 +79,7 @@ struct ContactView: View {
             .onAppear{
                 self.loadJSON(num: self.indexManager.contactSelectorIndex)
             }
-        }.frame(minWidth: 450, maxWidth: .infinity, minHeight: 100, maxHeight: .infinity)
+        }.frame(minWidth: 450, maxWidth: .infinity, minHeight: 400, maxHeight: .infinity)
         
     }
     
