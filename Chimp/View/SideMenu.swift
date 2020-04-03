@@ -32,7 +32,7 @@ struct SideMenu: View{
                     .font(.system(size: 9))
                     .padding(EdgeInsets(top: 4, leading: 0, bottom: 24, trailing: 0))
                 List(selection: self.$selection) {
-                    NavigationLink(destination: Today(), tag: 0, selection: self.$selection) {
+                    NavigationLink(destination: Today(),tag: 0, selection: self.$selection) {
                         Text("Today").font(.system(size: 12, weight: .regular)) .padding(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
                     }
                     NavigationLink(destination: ContactView()) {
@@ -53,12 +53,11 @@ struct SideMenu: View{
                         Text("E-mails").font(.system(size: 12, weight: .regular)).padding(EdgeInsets(top: 0, leading: 0, bottom: 8, trailing: 0))
                         
                     }
-                }.onAppear{
+                }.frame(minWidth: 100, maxWidth: 160, maxHeight: .infinity).listStyle(PlainListStyle()).onAppear{
                     self.selection = 0
                 }
             }
-        }.frame(minWidth: 450, maxWidth: .infinity, maxHeight: .infinity).listStyle(SidebarListStyle())
-        
+        }        
         
         //        VStack(spacing: 0){
         //            VStack(alignment: .center, spacing: 0){

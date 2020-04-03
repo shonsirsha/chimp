@@ -31,7 +31,7 @@ struct ContactView: View {
                             .onReceive(indexManager.publisher) { int in
                                 self.loadJSON(num: int)
                         }  .fixedSize()
-                                                                     .frame(width: 30) .padding(.leading, 24)
+                         .frame(width: 30) .padding(.leading, 24)
                             .padding(.trailing,30)
                       
                         
@@ -71,15 +71,12 @@ struct ContactView: View {
                             }
                         }
                     }.padding(.trailing, -16)
-                        .frame(minWidth: 250, maxWidth: 260)
                 }
                 
-            }
-            .frame(minWidth: 400, idealWidth: 400, maxWidth: .infinity, minHeight: 300)
-            .onAppear{
+            }.onAppear{
                 self.loadJSON(num: self.indexManager.contactSelectorIndex)
             }
-        }.frame(minWidth: 450, maxWidth: .infinity, minHeight: 400, maxHeight: .infinity)
+        }.frame(idealWidth: 200,maxHeight: .infinity)
         
     }
     

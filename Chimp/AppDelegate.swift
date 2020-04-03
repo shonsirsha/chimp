@@ -26,7 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             styleMask: [.titled, .closable, .miniaturizable, .resizable],
             backing: .buffered, defer: false)
         
-  
+        window.setFrame(NSScreen.main!.visibleFrame, display: true, animate: true)
         
         window.titlebarAppearsTransparent = true
         window.titleVisibility = .hidden

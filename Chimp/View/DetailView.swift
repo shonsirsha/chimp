@@ -112,7 +112,7 @@ struct DetailView: View {
             
             
             
-        }.frame(alignment: Alignment.topLeading)
+        }.frame(idealWidth:800,alignment: Alignment.topLeading)
         
         
     }
