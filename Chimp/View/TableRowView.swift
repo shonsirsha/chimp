@@ -13,6 +13,7 @@ struct TableRowView: View {
                 Text("\(contact.firstName) \(contact.lastName)")
                             .truncationMode(.tail)
                                .font(.system(size: 12, weight: .regular))
+                    .foregroundColor(.black)
                                .padding(.bottom,8)
                            .padding(.top,8)
 

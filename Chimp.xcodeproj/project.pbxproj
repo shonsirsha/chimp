@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		502EE9532436E8CB00310365 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EE9522436E8CB00310365 /* SideBar.swift */; };
+		5041FA9424392B0C0064214E /* WhiteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5041FA9324392B0C0064214E /* WhiteList.swift */; };
 		507FFDC3242CF365006DA2AB /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507FFDC2242CF365006DA2AB /* ContactView.swift */; };
 		507FFDC5242D4427006DA2AB /* CallsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507FFDC4242D4427006DA2AB /* CallsView.swift */; };
 		50C2768E242DDFE20032ACB4 /* TransparentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C2768D242DDFE20032ACB4 /* TransparentButton.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		502EE9522436E8CB00310365 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
+		5041FA9324392B0C0064214E /* WhiteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteList.swift; sourceTree = "<group>"; };
 		507FFDC2242CF365006DA2AB /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		507FFDC4242D4427006DA2AB /* CallsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsView.swift; sourceTree = "<group>"; };
 		50C2768D242DDFE20032ACB4 /* TransparentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentButton.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				B507FA502416795E00723CFA /* Helper.swift */,
 				50C2768D242DDFE20032ACB4 /* TransparentButton.swift */,
 				50C2768F242DE9060032ACB4 /* IndexManager.swift */,
+				5041FA9324392B0C0064214E /* WhiteList.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				50C2768E242DDFE20032ACB4 /* TransparentButton.swift in Sources */,
 				B58AEF59241A74F3007106D2 /* SideMenuModel.swift in Sources */,
 				B507FA0F24166AE900723CFA /* ContentView.swift in Sources */,
+				5041FA9424392B0C0064214E /* WhiteList.swift in Sources */,
 				50C27690242DE9060032ACB4 /* IndexManager.swift in Sources */,
 				B58AEF5D241A9C21007106D2 /* SwiftUIView.swift in Sources */,
 				507FFDC3242CF365006DA2AB /* ContactView.swift in Sources */,

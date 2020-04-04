@@ -29,7 +29,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.setFrame(NSScreen.main!.visibleFrame, display: true, animate: true)
         
         window.titlebarAppearsTransparent = true
+        window.backgroundColor = .white
         window.titleVisibility = .hidden
+        window.appearance = NSAppearance(named: .aqua)
         window.styleMask.insert(.fullSizeContentView)
         
        

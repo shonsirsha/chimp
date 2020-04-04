@@ -27,37 +27,48 @@ struct SideMenu: View{
                 
                 Text("Frederic Horsch")
                     .font(.system(size: 13, weight: .bold))
+                    .foregroundColor(.black)
                 
                 Text("frederichorsch@web.de")
                     .font(.system(size: 9))
+                    .foregroundColor(.black)
+
                     .padding(EdgeInsets(top: 4, leading: 0, bottom: 24, trailing: 0))
                 List(selection: self.$selection) {
                     NavigationLink(destination: Today(),tag: 0, selection: self.$selection) {
-                        Text("Today").font(.system(size: 12, weight: .regular)) .padding(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
+                        Text("Today").font(.system(size: 12, weight: .regular))
+                            .foregroundColor(.black)
+
+                            .padding(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
                     }
                     NavigationLink(destination: ContactView()) {
-                        Text("Contacts").font(.system(size: 12, weight: .regular)).padding(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
+                        Text("Contacts").font(.system(size: 12, weight: .regular))                    .foregroundColor(.black)
+
+                            .padding(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
                         
                     }
                     
                     NavigationLink(destination: ContactView()) {
-                        Text("Tasks").font(.system(size: 12, weight: .regular)).padding(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
+                        Text("Tasks").font(.system(size: 12, weight: .regular))                    .foregroundColor(.black)
+.padding(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
                         
                     }
                     
                     NavigationLink(destination: ContactView()) {
-                        Text("Files").font(.system(size: 12, weight: .regular)).padding(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
+                        Text("Files").font(.system(size: 12, weight: .regular))                    .foregroundColor(.black)
+.padding(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
                         
                     }
                     NavigationLink(destination: ContactView()) {
-                        Text("E-mails").font(.system(size: 12, weight: .regular)).padding(EdgeInsets(top: 0, leading: 0, bottom: 8, trailing: 0))
+                        Text("E-mails").font(.system(size: 12, weight: .regular))                    .foregroundColor(.black)
+.padding(EdgeInsets(top: 0, leading: 0, bottom: 8, trailing: 0))
                         
                     }
                 }.frame(minWidth: 100, maxWidth: 160, maxHeight: .infinity).listStyle(PlainListStyle()).onAppear{
                     self.selection = 0
                 }
             }
-        }        
+        }
         
         //        VStack(spacing: 0){
         //            VStack(alignment: .center, spacing: 0){
