@@ -12,6 +12,8 @@ struct DetailView: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
     
     
+    
+    
     let contact: ContactDetail
     @State private var favoriteColor = 0
     var body: some View {

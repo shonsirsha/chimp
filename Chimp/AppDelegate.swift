@@ -34,12 +34,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.appearance = NSAppearance(named: .aqua)
         window.styleMask.insert(.fullSizeContentView)
         
-       
-        
+//        window.collectionBehavior = NSWindow.CollectionBehavior.canJoinAllSpaces
+//        
+//        window.collectionBehavior = NSWindow.CollectionBehavior.moveToActiveSpace
         window.center()
         window.setFrameAutosaveName("Main Window")
         window.contentView = NSHostingView(rootView: contentView)
         window.makeKeyAndOrderFront(nil)
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

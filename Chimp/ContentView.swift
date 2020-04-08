@@ -22,7 +22,12 @@ struct ContentView: View {
             backing: .buffered, defer: false)
         
         //hide the close btns,etc.
-        sidebarWindow.standardWindowButton(.closeButton)!.isHidden = true
+        
+        sidebarWindow.collectionBehavior = NSWindow.CollectionBehavior.canJoinAllSpaces
+//
+//                     sidebarWindow.collectionBehavior = NSWindow.CollectionBehavior.moveToActiveSpace
+        print("main sidebarWindow \(sidebarWindow)")
+sidebarWindow.standardWindowButton(.closeButton)!.isHidden = true
         sidebarWindow.standardWindowButton(.miniaturizeButton)!.isHidden = true
         sidebarWindow.standardWindowButton(.zoomButton)!.isHidden = true
         sidebarWindow.titlebarAppearsTransparent = true
@@ -38,18 +43,19 @@ struct ContentView: View {
         //corner radius
         
         //always ontop
+       
+        
         sidebarWindow.level = .floating
         sidebarWindow.makeKeyAndOrderFront(nil)
         
-        
+      
         if let myScreen = NSScreen.main {
             let windowFrame = myScreen.frame
             let h = windowFrame.size.height
             let w = windowFrame.size.width
             sidebarWindow.setFrameOrigin(NSPoint(x: w-55, y:  h/2-180))
-            print(h)
-            print(w)
-            print(windowFrame)
+            
+//             sidebarWindow.setFrameOrigin(NSPoint(x: 55-w, y:  h/2-180))
         }
         
         sidebarWindow.contentView = NSHostingView(rootView: SideBar(thisWindow: sidebarWindow))

@@ -12,7 +12,19 @@ struct SideBar: View {
     @Environment(\.colorScheme) var colorScheme: ColorScheme
     
     let thisWindow:NSWindow?
-    
+    private func yay(){
+        if let myScreen = NSScreen.main {
+         let windowFrame = myScreen.frame
+         let h = windowFrame.size.height
+         let w = windowFrame.size.width
+             print(w)
+            thisWindow!.setFrameOrigin(NSPoint(x: w-55, y:  h/2-180))
+
+         }
+        
+         
+    }
+ 
     var body: some View {
         VStack(spacing: 0){
             Button(action: {
@@ -44,6 +56,14 @@ struct SideBar: View {
             Spacer()
         }
         .frame(width: 40, height: 320)
+    .contentShape(Rectangle())
+    .gesture(
+        TapGesture()
+            .onEnded { _ in
+                
+                self.yay()
+            }
+    )
     }
 }
 
