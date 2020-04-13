@@ -23,7 +23,7 @@ struct SideBar: View {
             let w = windowFrame.size.width
             //            print("W: \(w)")
             print("h: \(h)")
-            let verticalPercentage = thisWindow!.frame.minY/h * 100
+//            let verticalPercentage = thisWindow!.frame.minY/h * 100
                            let horizontalPercentage = thisWindow!.frame.minX/w * 100
             if(horizontalPercentage > 50){
             let n = 1225 - w//right
@@ -85,7 +85,7 @@ struct SideBar: View {
                 Image("contacts_sidebar").resizable()
                     .frame(width: 24, height: 24)    .aspectRatio(contentMode: .fit)
                 
-            }.buttonStyle(PlainButtonStyle()) .padding(.bottom, 8)
+            }.buttonStyle(PlainButtonStyle()) .padding(.bottom, 8).padding(.top,8)
             Divider()
             Button(action: {
                 print("tasks pressed")
@@ -112,7 +112,6 @@ struct SideBar: View {
         }
         .frame(width: sideBarW, height: sideBarH)
         .contentShape(Rectangle())
-        .background(Color.yellow)
         .gesture(
             TapGesture().onEnded{_ in
                 self.yay()

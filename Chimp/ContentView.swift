@@ -27,12 +27,8 @@ struct ContentView: View {
 //
 //                     sidebarWindow.collectionBehavior = NSWindow.CollectionBehavior.moveToActiveSpace
         print("main sidebarWindow \(sidebarWindow)")
-sidebarWindow.standardWindowButton(.closeButton)!.isHidden = true
-        sidebarWindow.standardWindowButton(.miniaturizeButton)!.isHidden = true
-        sidebarWindow.standardWindowButton(.zoomButton)!.isHidden = true
-        sidebarWindow.titlebarAppearsTransparent = true
-        
-        //drag by its body
+
+        sidebarWindow.styleMask.remove(.titled)
         sidebarWindow.isMovableByWindowBackground = true
         
         //colors
