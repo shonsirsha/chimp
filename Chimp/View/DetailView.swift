@@ -11,7 +11,7 @@ struct DetailView: View {
     
     @Environment(\.colorScheme) var colorScheme: ColorScheme
     
-    
+ 
     
     
     let contact: ContactDetail

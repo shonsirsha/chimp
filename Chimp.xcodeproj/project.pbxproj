@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		502EE9532436E8CB00310365 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EE9522436E8CB00310365 /* SideBar.swift */; };
 		5041FA9424392B0C0064214E /* WhiteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5041FA9324392B0C0064214E /* WhiteList.swift */; };
+		5041FA952444AD220064214E /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EE9522436E8CB00310365 /* SideBar.swift */; };
 		507FFDC3242CF365006DA2AB /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507FFDC2242CF365006DA2AB /* ContactView.swift */; };
 		507FFDC5242D4427006DA2AB /* CallsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507FFDC4242D4427006DA2AB /* CallsView.swift */; };
 		50C2768E242DDFE20032ACB4 /* TransparentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C2768D242DDFE20032ACB4 /* TransparentButton.swift */; };
@@ -56,7 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		502EE9522436E8CB00310365 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
+		502EE9522436E8CB00310365 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SideBar.swift; sourceTree = "<group>"; };
 		5041FA9324392B0C0064214E /* WhiteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteList.swift; sourceTree = "<group>"; };
 		507FFDC2242CF365006DA2AB /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		507FFDC4242D4427006DA2AB /* CallsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsView.swift; sourceTree = "<group>"; };
@@ -378,12 +378,12 @@
 				B507FA4D2416771F00723CFA /* TableRowView.swift in Sources */,
 				B5EB3146241D1C46004B93E4 /* Today.swift in Sources */,
 				B507FA48241675CB00723CFA /* ContactDetail.swift in Sources */,
-				502EE9532436E8CB00310365 /* SideBar.swift in Sources */,
 				B507FA0D24166AE900723CFA /* AppDelegate.swift in Sources */,
 				B507FA512416795E00723CFA /* Helper.swift in Sources */,
 				B5EB3144241D1595004B93E4 /* GlobalEnvironment.swift in Sources */,
 				B507FA1224166AE900723CFA /* Chimp.xcdatamodeld in Sources */,
 				B58AEF57241A7433007106D2 /* SideMenu.swift in Sources */,
+				5041FA952444AD220064214E /* SideBar.swift in Sources */,
 				B507FA3F2416728700723CFA /* SectionHeaderView.swift in Sources */,
 				B507FA42241672F500723CFA /* ContactSection.swift in Sources */,
 				B5EF128A242CB887007BA684 /* PickerSamplesView.swift in Sources */,

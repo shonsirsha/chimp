@@ -55,7 +55,8 @@ sidebarWindow.standardWindowButton(.closeButton)!.isHidden = true
             let w = windowFrame.size.width
             sidebarWindow.setFrameOrigin(NSPoint(x: w-55, y:  h/2-180))
             
-//             sidebarWindow.setFrameOrigin(NSPoint(x: 55-w, y:  h/2-180))
+            
+//             sidebarWindow.setFrameOrigin(NSPoint(x: 10-w, y:  h/2-180))
         }
         
         sidebarWindow.contentView = NSHostingView(rootView: SideBar(thisWindow: sidebarWindow))
